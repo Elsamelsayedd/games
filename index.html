@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#navbar">
+    <section id="games" class="d-block">
+      <header class="">
+        <img src="images/wraper.png" alt="wraper" class="w-100" />
+      </header>
+
+      <nav
+        class="navbar navbar-expand-lg w-75 m-auto rounded-4 p-3 mb-5 position-sticky top-0 z-3"
+        id="navbar"
+      >
+        <div class="logo me-1">
+          <img src="images/logo-sm.png" alt="logo" class="w-100" />
+        </div>
+        <a class="navbar-brand text-white" href="#">GAME REVIEWS </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                id="mmorpg"
+                class="nav-link active"
+                aria-current="page"
+                href="#"
+                >MMORPG</a
+              >
+            </li>
+            <li class="nav-item">
+              <a id="shooter" class="nav-link" href="#">SHOOTER</a>
+            </li>
+            <li class="nav-item">
+              <a id="sailing" class="nav-link" href="#">SAILING</a>
+            </li>
+            <li class="nav-item">
+              <a id="permadeath" class="nav-link" href="#">PERMADEATH</a>
+            </li>
+            <li class="nav-item">
+              <a id="superhero" class="nav-link" href="#">SUPERHERO</a>
+            </li>
+            <li class="nav-item">
+              <a id="pixel" class="nav-link" href="#">PIXEL</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="">
+        <div class="container">
+          <div class="row text-center" id="row"></div>
+        </div>
+      </section>
+    </section>
+
+    <section id="detailes" class="d-none"></section>
+    <div class="loading d-none">
+      <span class="loader"></span>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>

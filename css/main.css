@@ -1,0 +1,188 @@
+:root {
+  --frist-color: #272b30;
+  --sec-color: rgb(58, 73, 123);
+}
+body {
+  background-color: var(--frist-color);
+  font-family: Comfortaa, cursive;
+}
+
+.navbar-brand {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+header img {
+  max-height: 30vh;
+  object-fit: cover;
+}
+
+.navbar {
+  background-color: var(--sec-color);
+  box-shadow: 0 0 10px rgb(0 0 0 / 0.7);
+}
+
+.logo {
+  width: 40px;
+}
+
+.nav-link {
+  color: white;
+}
+
+.nav-link:hover,
+.nav-item .nav-link.active {
+  color: #09c !important;
+  transition: color 0.5s;
+}
+
+.nav-item {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.card-detailes-title {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.card-detailes-free {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.card-detailes-text {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.platform,
+.genre {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.details-game,
+.details-title {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.font {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.font2 {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.show-game {
+  font-size: 16px;
+  font-weight: 400;
+}
+.card {
+  --bs-card-border-radius: 0;
+  background-color: var(--frist-color);
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+  cursor: pointer;
+}
+
+.card:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}
+
+.badge-color {
+  background-color: #32383e;
+}
+
+.card p {
+  margin: 0;
+}
+
+.show-game:hover {
+  background-color: rgb(255, 193, 7);
+}
+
+.show-game {
+  transition: background-color 0.5s;
+}
+
+body::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(52, 56, 59); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--frist-color); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  background-color: rgba(39, 43, 48, 0.67);
+}
+
+.header-icon {
+  cursor: pointer;
+  font-size: x-large;
+}
+
+@media (max-width: 640px) {
+  .navbar-brand {
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: -15px;
+  }
+}
